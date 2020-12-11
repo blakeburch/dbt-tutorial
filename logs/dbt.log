@@ -1,0 +1,267 @@
+2020-12-11 20:13:42.757587 (MainThread): Running with dbt=0.18.1
+2020-12-11 20:13:43.007717 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/blake/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-12-11 20:13:43.008954 (MainThread): Tracking: tracking
+2020-12-11 20:13:43.018946 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fe6b760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fe7a760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fe7a700>]}
+2020-12-11 20:13:43.049403 (MainThread): Partial parsing not enabled
+2020-12-11 20:13:43.051329 (MainThread): Parsing macros/etc.sql
+2020-12-11 20:13:43.056387 (MainThread): Parsing macros/catalog.sql
+2020-12-11 20:13:43.067067 (MainThread): Parsing macros/adapters.sql
+2020-12-11 20:13:43.100624 (MainThread): Parsing macros/materializations/seed.sql
+2020-12-11 20:13:43.106880 (MainThread): Parsing macros/materializations/view.sql
+2020-12-11 20:13:43.112331 (MainThread): Parsing macros/materializations/table.sql
+2020-12-11 20:13:43.126054 (MainThread): Parsing macros/materializations/copy.sql
+2020-12-11 20:13:43.132546 (MainThread): Parsing macros/materializations/incremental.sql
+2020-12-11 20:13:43.148416 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-12-11 20:13:43.153265 (MainThread): Parsing macros/core.sql
+2020-12-11 20:13:43.157306 (MainThread): Parsing macros/materializations/helpers.sql
+2020-12-11 20:13:43.166820 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-12-11 20:13:43.169904 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-12-11 20:13:43.189622 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-12-11 20:13:43.220318 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-12-11 20:13:43.242011 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-12-11 20:13:43.244629 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-12-11 20:13:43.250961 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-12-11 20:13:43.265215 (MainThread): Parsing macros/materializations/table/table.sql
+2020-12-11 20:13:43.272975 (MainThread): Parsing macros/materializations/view/view.sql
+2020-12-11 20:13:43.279895 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-12-11 20:13:43.286069 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-12-11 20:13:43.287502 (MainThread): Parsing macros/etc/query.sql
+2020-12-11 20:13:43.288754 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-12-11 20:13:43.290525 (MainThread): Parsing macros/etc/datetime.sql
+2020-12-11 20:13:43.301348 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-12-11 20:13:43.304429 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-12-11 20:13:43.306504 (MainThread): Parsing macros/adapters/common.sql
+2020-12-11 20:13:43.347490 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-12-11 20:13:43.350429 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-12-11 20:13:43.352969 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-12-11 20:13:43.355034 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-12-11 20:13:43.363186 (MainThread): Partial parsing not enabled
+2020-12-11 20:13:43.434251 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.my_first_dbt_model".
+2020-12-11 20:13:43.456249 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.my_second_dbt_model".
+2020-12-11 20:13:43.700752 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 155 macros, 0 operations, 0 seed files, 0 sources
+2020-12-11 20:13:43.701688 (MainThread): 
+2020-12-11 20:13:43.702172 (MainThread): Acquiring new bigquery connection "master".
+2020-12-11 20:13:43.704965 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_dbt-demos".
+2020-12-11 20:13:43.705178 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-12-11 20:13:43.937847 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "create_dbt-demos_dbt-user".
+2020-12-11 20:13:43.938113 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "create_dbt-demos_dbt-user".
+2020-12-11 20:13:43.938205 (ThreadPoolExecutor-0_0): Creating schema "dbt-demos.dbt-user".
+2020-12-11 20:13:43.938279 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state closed
+2020-12-11 20:13:43.938799 (ThreadPoolExecutor-0_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-12-11 20:13:44.145325 (ThreadPoolExecutor-0_0): Retry attempt 1 of 1 after error: BadRequest('POST https://bigquery.googleapis.com/bigquery/v2/projects/dbt-demos/datasets: Invalid dataset ID "dbt-user". Dataset IDs must be alphanumeric (plus underscores) and must be at most 1024 characters long.')
+2020-12-11 20:13:45.221396 (MainThread): Connection 'master' was properly closed.
+2020-12-11 20:13:45.221537 (MainThread): Connection 'create_dbt-demos_dbt-user' was properly closed.
+2020-12-11 20:13:45.221682 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fffbeb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110133f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110069700>]}
+2020-12-11 20:13:45.221861 (MainThread): Flushing usage events
+2020-12-11 20:13:45.532750 (MainThread): Encountered an error:
+2020-12-11 20:13:45.532959 (MainThread): Database Error
+  Invalid dataset ID "dbt-user". Dataset IDs must be alphanumeric (plus underscores) and must be at most 1024 characters long.
+2020-12-11 20:13:45.545203 (MainThread): Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 103, in exception_handler
+    yield
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 420, in fn
+    return client.create_dataset(dataset, exists_ok=True)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 462, in create_dataset
+    api_response = self._call_api(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/bigquery/client.py", line 558, in _call_api
+    return call()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 281, in retry_wrapped_func
+    return retry_target(
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/api_core/retry.py", line 184, in retry_target
+    return target()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/google/cloud/_http.py", line 423, in api_request
+    raise exceptions.from_http_response(response)
+google.api_core.exceptions.BadRequest: 400 POST https://bigquery.googleapis.com/bigquery/v2/projects/dbt-demos/datasets: Invalid dataset ID "dbt-user". Dataset IDs must be alphanumeric (plus underscores) and must be at most 1024 characters long.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/main.py", line 124, in main
+    results, succeeded = handle_and_check(args)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/main.py", line 202, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/main.py", line 255, in run_from_args
+    results = task.run()
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/runnable.py", line 419, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/runnable.py", line 379, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/run.py", line 394, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/runnable.py", line 523, in create_schemas
+    create_future.result()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 432, in result
+    return self.__get_result()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/_base.py", line 388, in __get_result
+    raise self._exception
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/utils.py", line 469, in connected
+    return func(*args, **kwargs)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/task/runnable.py", line 485, in create_schema
+    adapter.create_schema(relation)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/impl.py", line 303, in create_schema
+    self.connections.create_dataset(database, schema)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 421, in create_dataset
+    self._retry_and_handle(msg='create dataset', conn=conn, fn=fn)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 442, in _retry_and_handle
+    return retry.retry_target(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/contextlib.py", line 131, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 107, in exception_handler
+    self.handle_error(e, message)
+  File "/Users/blake/.virtualenvs/dbt-testing/lib/python3.8/site-packages/dbt/adapters/bigquery/connections.py", line 95, in handle_error
+    raise DatabaseException(error_msg)
+dbt.exceptions.DatabaseException: Database Error
+  Invalid dataset ID "dbt-user". Dataset IDs must be alphanumeric (plus underscores) and must be at most 1024 characters long.
+
+2020-12-11 20:15:56.790631 (MainThread): Running with dbt=0.18.1
+2020-12-11 20:15:57.061899 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/Users/blake/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2020-12-11 20:15:57.063118 (MainThread): Tracking: tracking
+2020-12-11 20:15:57.072079 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4756a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f484730>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f4846d0>]}
+2020-12-11 20:15:57.099240 (MainThread): Partial parsing not enabled
+2020-12-11 20:15:57.100673 (MainThread): Parsing macros/etc.sql
+2020-12-11 20:15:57.105288 (MainThread): Parsing macros/catalog.sql
+2020-12-11 20:15:57.113633 (MainThread): Parsing macros/adapters.sql
+2020-12-11 20:15:57.134752 (MainThread): Parsing macros/materializations/seed.sql
+2020-12-11 20:15:57.137820 (MainThread): Parsing macros/materializations/view.sql
+2020-12-11 20:15:57.141751 (MainThread): Parsing macros/materializations/table.sql
+2020-12-11 20:15:57.153674 (MainThread): Parsing macros/materializations/copy.sql
+2020-12-11 20:15:57.158621 (MainThread): Parsing macros/materializations/incremental.sql
+2020-12-11 20:15:57.173348 (MainThread): Parsing macros/materializations/snapshot.sql
+2020-12-11 20:15:57.177662 (MainThread): Parsing macros/core.sql
+2020-12-11 20:15:57.182487 (MainThread): Parsing macros/materializations/helpers.sql
+2020-12-11 20:15:57.194666 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2020-12-11 20:15:57.196851 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2020-12-11 20:15:57.217822 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2020-12-11 20:15:57.250502 (MainThread): Parsing macros/materializations/seed/seed.sql
+2020-12-11 20:15:57.276198 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2020-12-11 20:15:57.278748 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2020-12-11 20:15:57.286489 (MainThread): Parsing macros/materializations/common/merge.sql
+2020-12-11 20:15:57.303387 (MainThread): Parsing macros/materializations/table/table.sql
+2020-12-11 20:15:57.311854 (MainThread): Parsing macros/materializations/view/view.sql
+2020-12-11 20:15:57.318872 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2020-12-11 20:15:57.324670 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2020-12-11 20:15:57.325894 (MainThread): Parsing macros/etc/query.sql
+2020-12-11 20:15:57.327056 (MainThread): Parsing macros/etc/is_incremental.sql
+2020-12-11 20:15:57.329168 (MainThread): Parsing macros/etc/datetime.sql
+2020-12-11 20:15:57.339116 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2020-12-11 20:15:57.341591 (MainThread): Parsing macros/etc/get_custom_database.sql
+2020-12-11 20:15:57.343534 (MainThread): Parsing macros/adapters/common.sql
+2020-12-11 20:15:57.385920 (MainThread): Parsing macros/schema_tests/relationships.sql
+2020-12-11 20:15:57.387980 (MainThread): Parsing macros/schema_tests/not_null.sql
+2020-12-11 20:15:57.390590 (MainThread): Parsing macros/schema_tests/unique.sql
+2020-12-11 20:15:57.392861 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2020-12-11 20:15:57.401339 (MainThread): Partial parsing not enabled
+2020-12-11 20:15:57.473385 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.my_first_dbt_model".
+2020-12-11 20:15:57.497443 (MainThread): Acquiring new bigquery connection "model.jaffle_shop.my_second_dbt_model".
+2020-12-11 20:15:57.734503 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 155 macros, 0 operations, 0 seed files, 0 sources
+2020-12-11 20:15:57.735252 (MainThread): 
+2020-12-11 20:15:57.735556 (MainThread): Acquiring new bigquery connection "master".
+2020-12-11 20:15:57.738607 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_dbt-demos".
+2020-12-11 20:15:57.739066 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2020-12-11 20:15:57.954013 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "create_dbt-demos_dbt_blake".
+2020-12-11 20:15:57.954409 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "create_dbt-demos_dbt_blake".
+2020-12-11 20:15:57.954551 (ThreadPoolExecutor-0_0): Creating schema "dbt-demos.dbt_blake".
+2020-12-11 20:15:57.954661 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state closed
+2020-12-11 20:15:57.955510 (ThreadPoolExecutor-0_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-12-11 20:15:58.563522 (ThreadPoolExecutor-1_0): Acquiring new bigquery connection "list_dbt-demos_dbt_blake".
+2020-12-11 20:15:58.563789 (ThreadPoolExecutor-1_0): Opening a new connection, currently in state closed
+2020-12-11 20:15:58.564532 (ThreadPoolExecutor-1_0): Client.dataset is deprecated and will be removed in a future version. Use a string like 'my_project.my_dataset' or a cloud.google.bigquery.DatasetReference object, instead.
+2020-12-11 20:15:58.833910 (MainThread): 14:15:58 | Concurrency: 1 threads (target='dev')
+2020-12-11 20:15:58.834080 (MainThread): 14:15:58 | 
+2020-12-11 20:15:58.842579 (Thread-1): Began running node model.jaffle_shop.my_first_dbt_model
+2020-12-11 20:15:58.843725 (Thread-1): 14:15:58 | 1 of 2 START table model dbt_blake.my_first_dbt_model................ [RUN]
+2020-12-11 20:15:58.844141 (Thread-1): Acquiring new bigquery connection "model.jaffle_shop.my_first_dbt_model".
+2020-12-11 20:15:58.844295 (Thread-1): Compiling model.jaffle_shop.my_first_dbt_model
+2020-12-11 20:15:58.863888 (Thread-1): Writing injected SQL for node "model.jaffle_shop.my_first_dbt_model"
+2020-12-11 20:15:58.865054 (Thread-1): finished collecting timing info
+2020-12-11 20:15:58.909093 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.my_first_dbt_model"
+2020-12-11 20:15:58.909924 (Thread-1): Opening a new connection, currently in state closed
+2020-12-11 20:15:58.910452 (Thread-1): On model.jaffle_shop.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_first_dbt_model"} */
+
+
+  create or replace table `dbt-demos`.`dbt_blake`.`my_first_dbt_model`
+  
+  
+  OPTIONS()
+  as (
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  );
+    
+2020-12-11 20:16:01.489112 (Thread-1): finished collecting timing info
+2020-12-11 20:16:01.489739 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88b1cb82-873a-4d12-828f-e57caaaadcd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f6f9070>]}
+2020-12-11 20:16:01.490916 (Thread-1): 14:16:01 | 1 of 2 OK created table model dbt_blake.my_first_dbt_model........... [CREATE TABLE (2.0 rows, 0.0 Bytes processed) in 2.65s]
+2020-12-11 20:16:01.491053 (Thread-1): Finished running node model.jaffle_shop.my_first_dbt_model
+2020-12-11 20:16:01.491537 (Thread-1): Began running node model.jaffle_shop.my_second_dbt_model
+2020-12-11 20:16:01.492481 (Thread-1): 14:16:01 | 2 of 2 START view model dbt_blake.my_second_dbt_model................ [RUN]
+2020-12-11 20:16:01.492744 (Thread-1): Acquiring new bigquery connection "model.jaffle_shop.my_second_dbt_model".
+2020-12-11 20:16:01.492842 (Thread-1): Compiling model.jaffle_shop.my_second_dbt_model
+2020-12-11 20:16:01.497930 (Thread-1): unclosed <socket.socket fd=10, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 65203), raddr=('172.217.14.170', 443)>
+2020-12-11 20:16:01.498190 (Thread-1): unclosed <socket.socket fd=11, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 65204), raddr=('172.217.9.170', 443)>
+2020-12-11 20:16:01.498402 (Thread-1): unclosed <socket.socket fd=13, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 65206), raddr=('172.217.9.170', 443)>
+2020-12-11 20:16:01.498571 (Thread-1): unclosed <socket.socket fd=12, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 65205), raddr=('172.217.14.170', 443)>
+2020-12-11 20:16:01.498726 (Thread-1): unclosed <socket.socket fd=15, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 65208), raddr=('172.217.9.170', 443)>
+2020-12-11 20:16:01.498909 (Thread-1): unclosed <socket.socket fd=14, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 65207), raddr=('172.217.14.170', 443)>
+2020-12-11 20:16:01.499097 (Thread-1): unclosed <socket.socket fd=21, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 65210), raddr=('172.217.9.170', 443)>
+2020-12-11 20:16:01.499236 (Thread-1): unclosed <socket.socket fd=20, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('192.168.0.162', 65209), raddr=('172.217.14.170', 443)>
+2020-12-11 20:16:01.503174 (Thread-1): Writing injected SQL for node "model.jaffle_shop.my_second_dbt_model"
+2020-12-11 20:16:01.503614 (Thread-1): finished collecting timing info
+2020-12-11 20:16:01.523083 (Thread-1): Writing runtime SQL for node "model.jaffle_shop.my_second_dbt_model"
+2020-12-11 20:16:01.523762 (Thread-1): Opening a new connection, currently in state closed
+2020-12-11 20:16:01.524263 (Thread-1): On model.jaffle_shop.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "0.18.1", "profile_name": "jaffle_shop", "target_name": "dev", "node_id": "model.jaffle_shop.my_second_dbt_model"} */
+
+
+  create or replace view `dbt-demos`.`dbt_blake`.`my_second_dbt_model`
+  OPTIONS()
+  as -- Use the `ref` function to select from other models
+
+select *
+from `dbt-demos`.`dbt_blake`.`my_first_dbt_model`
+where id = 1;
+
+
+2020-12-11 20:16:02.534519 (Thread-1): finished collecting timing info
+2020-12-11 20:16:02.535178 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88b1cb82-873a-4d12-828f-e57caaaadcd9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f671880>]}
+2020-12-11 20:16:02.536415 (Thread-1): 14:16:02 | 2 of 2 OK created view model dbt_blake.my_second_dbt_model........... [CREATE VIEW in 1.04s]
+2020-12-11 20:16:02.536561 (Thread-1): Finished running node model.jaffle_shop.my_second_dbt_model
+2020-12-11 20:16:02.537432 (MainThread): Acquiring new bigquery connection "master".
+2020-12-11 20:16:02.537684 (MainThread): 14:16:02 | 
+2020-12-11 20:16:02.537780 (MainThread): 14:16:02 | Finished running 1 table model, 1 view model in 4.80s.
+2020-12-11 20:16:02.537855 (MainThread): Connection 'master' was properly closed.
+2020-12-11 20:16:02.537910 (MainThread): Connection 'model.jaffle_shop.my_second_dbt_model' was properly closed.
+2020-12-11 20:16:02.543881 (MainThread): 
+2020-12-11 20:16:02.544091 (MainThread): Completed successfully
+2020-12-11 20:16:02.544233 (MainThread): 
+Done. PASS=2 WARN=0 ERROR=0 SKIP=0 TOTAL=2
+2020-12-11 20:16:02.544433 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f70c1c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f689c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f689910>]}
+2020-12-11 20:16:02.544625 (MainThread): Flushing usage events
