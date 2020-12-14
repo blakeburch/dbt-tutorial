@@ -1,6 +1,5 @@
 default:
   outputs:
-
     dev:
       type: redshift
       threads: [1 or more]
@@ -25,6 +24,20 @@ default:
   target: dev
 
 jaffle_shop: # this needs to match the profile: in your dbt_project.yml file
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account-json
+      project: dbt-demos # Replace this with your project id
+      dataset: dbt_blake # Replace this with dbt_your_name, e.g. dbt_bob
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
+      keyfile: "{{ env_var('BIGQUERY_CREDS') }}"
+
+jaffle_shop_old: # this needs to match the profile: in your dbt_project.yml file
   target: dev
   outputs:
     dev:
