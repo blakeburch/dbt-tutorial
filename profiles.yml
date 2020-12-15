@@ -35,7 +35,7 @@ jaffle_shop: # this needs to match the profile: in your dbt_project.yml file
       timeout_seconds: 300
       location: US
       priority: interactive
-      keyfile: "{{ env_var('BIGQUERY_CREDS') }}"
+      keyfile: "{{ env_var('BIGQUERY_KEYFILE') }}"
 
 jaffle_shop_old: # this needs to match the profile: in your dbt_project.yml file
   target: dev
