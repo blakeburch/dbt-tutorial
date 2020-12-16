@@ -1,6 +1,7 @@
 import subprocess
 import os
 import json
+import sys
 
 dbt_command = os.environ.get(
     'DBT_COMMAND',
