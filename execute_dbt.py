@@ -4,7 +4,7 @@ import json
 
 dbt_command = os.environ.get(
     'DBT_COMMAND',
-    'dbt run --profiles-dir /Users/blake/Documents/dbt-tutorial/jaffle-shop/')
+    'dbt run')
 
 bigquery_credentials = os.environ.get('BIGQUERY_CREDS')
 bigquery_credentials = json.loads(bigquery_credentials)
