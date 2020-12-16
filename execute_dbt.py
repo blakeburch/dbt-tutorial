@@ -15,4 +15,5 @@ with open('bigquery_creds.json', 'w') as outfile:
     json.dump(bigquery_credentials, outfile)
 
 
-subprocess.run(['sh', '-c', dbt_command])
+command = subprocess.run(['sh', '-c', dbt_command], capture_output=True)
+sys.exit(command.returncode)
