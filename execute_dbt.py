@@ -13,22 +13,20 @@ instructions = """
 6) Click "Use this Blueprint" to get started.
 """
 
-if os.path.realpath(
-        __file__) == '/home/shipyard/execute_dbt.py':
+bigquery_credentials = os.environ.get('BIGQUERY_CREDS')
+directory_of_file = os.path.dirname(os.path.realpath(__file__))
+dbt_command = os.environ.get('DBT_COMMAND', 'dbt run')
+
+if os.path.realpath(__file__) == '/home/shipyard/execute_dbt.py':
     print('This dbt Blueprint is not set up properly. Edit this Blueprint and follow the instructions below:')
     print(instructions)
     sys.exit(1)
 else:
-    dbt_command = os.environ.get(
-        'DBT_COMMAND',
-        'dbt run')
 
-    bigquery_credentials = os.environ.get('BIGQUERY_CREDS')
-    bigquery_credentials = json.loads(bigquery_credentials)
-
-    directory_of_file = os.path.dirname(os.path.realpath(__file__))
     os.chdir(directory_of_file)
-    with open('bigquery_creds.json', 'w') as outfile:
-        json.dump(bigquery_credentials, outfile)
+    if bigquery_credentials:
+        bigquery_credentials = json.loads(bigquery_credentials)
+        with open('bigquery_creds.json', 'w') as outfile:
+            json.dump(bigquery_credentials, outfile)
 
     subprocess.run(['sh', '-c', dbt_command])
