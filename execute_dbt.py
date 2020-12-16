@@ -2,9 +2,12 @@ import subprocess
 import os
 import json
 
-dbt_command = os.environ.get('DBT_COMMAND', 'dbt run')
+dbt_command = os.environ.get(
+    'DBT_COMMAND',
+    'dbt run --profiles-dir /Users/blake/Documents/dbt-tutorial/jaffle-shop/')
 
 bigquery_credentials = os.environ.get('BIGQUERY_CREDS')
+bigquery_credentials = json.loads(bigquery_credentials)
 with open('bigquery_creds.json', 'w') as outfile:
     json.dump(bigquery_credentials, outfile)
 

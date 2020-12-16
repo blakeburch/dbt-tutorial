@@ -28,7 +28,7 @@ jaffle_shop: # this needs to match the profile: in your dbt_project.yml file
   outputs:
     dev:
       type: bigquery
-      method: service-account-json
+      method: service-account
       project: dbt-demos # Replace this with your project id
       dataset: dbt_blake # Replace this with dbt_your_name, e.g. dbt_bob
       threads: 1
