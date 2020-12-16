@@ -24,7 +24,7 @@ if os.path.realpath(__file__) == '/home/shipyard/execute_dbt.py':
 else:
 
     os.chdir(directory_of_file)
-    if bigquery_credentials or bigquery_credentials == 'None':
+    if not bigquery_credentials or not bigquery_credentials == 'None':
         bigquery_credentials = json.loads(bigquery_credentials)
         with open('bigquery_creds.json', 'w') as outfile:
             json.dump(bigquery_credentials, outfile)
